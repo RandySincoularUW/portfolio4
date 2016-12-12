@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<!-- GEOG 572: Lab 4 -->
+<!-- Randy Sincoular -->
+
+
+<html lang="en" >
+
+<head>
+    
+    <!-- Provide Proper Rendering and Touch Zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>Randy Sincoular</title>
+    
+    <!-- Bootstrap Stylesheet Links -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    
+
+</head>
+
+<body>
+        <!-- -------------- -->
+        <!-- Navigation Bar -->
+        <!-- -------------- -->
+		<nav class="navbar navbar-default navbar-fixed-top"> <!-- Creates the navbar -->
+		  <div class="container">
+		    <div class="navbar-header"> <!-- Creates the navbar header -->
+                
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <!-- Used for screen readers for accessibility -->
+						<span class="glyphicon glyphicon-menu-hamburger"></span>
+						<span class="menu"> Menu</span>
+					</button> <!-- Hamburger button for smaller devices -->
+					<a class="navbar-brand" href="index.html">Randy Sincoular</a> <!-- Your website brand name -->
+		    </div>
+
+		    <div id="navbar" class="collapse navbar-collapse"> <!-- Links to include in navbar -->
+		      <ul class="nav navbar-nav navbar-right">  <!-- Unordered list for links on navbar -->
+                  
+                
+		         <li><a href="about.html">About</a></li>
+                 <li class="active"><a href="index.html">Portfolio</a></li> <!-- Make Portfolio Active -->
+				 <li><a href="resume.html">Resume</a></li>
+		         <li><a href="contact.html">Contact</a></li>
+                  
+		      </ul>
+		    </div> <!-- end .navbar-collapse -->
+		  </div> <!-- end .container -->
+		</nav> <!-- end navigation bar -->
+
+    
+        <!-- --------- -->
+        <!-- Jumbotron -->
+        <!-- --------- -->
+		<div class="jumbotron">
+			<div class="container">
+                <br>
+				<h2>Randy Sincoular | Geospatial Professional</h2>
+                <!-- <h5><strong>Experienced.Innovative.Thorough</strong></h5> -->
+                <p class="text-info">Experienced.Innovative.Thorough</p>
+			</div>
+		</div>
+    
+        <!-- --------------------- -->
+        <!-- Infographic Container-->
+        <!-- --------------------- -->
+    
+		<div class="container">   <!-- Using container-fluid, the paragraph and jumbotron do not line up -->
+			<div class="row">
+      
+                <!-- ----------- -->
+                <!-- Infographic -->
+                <!-- ----------- -->
+            
+                <!--   col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3 -->
+                
+				<div class="col-md-8 col-xs-10">
+                    
+                        <h4>Portal Apps and Map Services</h4>
+                            <p>
+                              Portal for ArcGIS was deployed to make it easier for users to consume and share maps and data.  One of the first maps users wanted to see were electric and gas outages.
+                            </p>
+                   	        <a href="assets/click_tickets.png">
+				                <img src="assets/click_tickets.png" alt="Portfolio Item #2" class="img-responsive"/>
+				            </a> 
+                        <p>
+                            <br>
+                            The first challenge was to take tickets, or work orders, created for urgent gas or electric incidents and be able to display these in a Portal application.  These tickets are called in by customers and then sent electronically to field technicians using a mobile application from ClickSoftware.
+                            <br>
+                            <br>
+                            <h4>Here is a summary of the steps required to display the data in Portal:</h4>
+                            <li>The tickets reside in a SQL Server 2008 R2 database.  The GIS uses an Oracle 12 Exadata database.  I had our DBA create a view of the urgent tickets on our GIS Oracle database.</li>
+                            <li>Create a feature class in the GIS database to store the Click ticket locations.  The coordinates for the ticket locations are in decimal degrees so a WKID Spaial Reference of : 4326 was used.</li>
+                            <li>ST_Geometry was used for the shape data type.  I like this data format.  You can use SQL to create the point features on the fly. No need to use ArcObjects or other API's to create the point feature locations.  Very slick!</li>
+                            
+                            <li>Data never seems to be in the exact format you want.  The Latitude/Longitude data needed to have a decimal point added because the ClickSoftware application didn't use it.</li>
+                            <li>Once the GIS feature class was created, a feature service was created in ArcGIS Server. Next step is to automate the process of refreshing the data on a regular basis.</li>
+                            <li>A combination of Python and SQL scripts were used read the data from the Oracle view and insert it into a temporary GIS feature class/Oracle table.  Once the temporary feature class has been updated, the source feature class is truncated and re-loaded with data from the temporary feature class. A process that takes less than a second.</li>
+                            
+                            
+                            <br>
+                        </p>
+                            <br>
+                     	    <a href="assets/outage_map.png">
+				                <img src="assets/outage_map.png" alt="Portfolio Item #2" class="img-responsive"/>
+				            </a> 
+                        <p>
+                            <br>
+                            This is an Operations Dashboard showing Electric Outages. Operation Dashboards provide a Read Only view of the data.  What is nice about the dashboards is you can have charts, guages, and graphs to give users a quick picture or synopsis of the data they are viewing.  
+                            <br>
+                            <br>
+                            In the screenshot, there is a graph that shows the total number of customers without power.  There is another graph on the bottom that shows the number of Priority Customers without power.  Priority customes can be Key Customers (K), customers like a Police Station, Sewerage Plant, etc.  Life Support (L) customers rely on power for medical equipment.
+                            <br>
+                            <br>
+                            The Electric outage data resides in a different Oracle database than GIS.  The process for creating the Electric Outage points is similar to how the urgent gas and electric tickets were created above.
+                        </p>
+  
+                    
+				</div>
+                
+			</div>   <!-- end row -->
+		</div>       <!-- end container-fluid -->
+
+		<!--put your external script links here-->
+		<script type="text/javascript" src="lib/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+</body>
+    
+
+</html>

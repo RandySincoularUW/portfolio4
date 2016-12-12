@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<!-- GEOG 572: Lab 4 -->
+<!-- Randy Sincoular -->
+
+
+<html lang="en" >
+
+<head>
+    
+    <!-- Provide Proper Rendering and Touch Zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>Randy Sincoular</title>
+    
+    <!-- Bootstrap Stylesheet Links -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    
+
+</head>
+
+<body>
+        <!-- -------------- -->
+        <!-- Navigation Bar -->
+        <!-- -------------- -->
+		<nav class="navbar navbar-default navbar-fixed-top"> <!-- Creates the navbar -->
+		  <div class="container">
+		    <div class="navbar-header"> <!-- Creates the navbar header -->
+                
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <!-- Used for screen readers for accessibility -->
+						<span class="glyphicon glyphicon-menu-hamburger"></span>
+						<span class="menu"> Menu</span>
+					</button> <!-- Hamburger button for smaller devices -->
+					<a class="navbar-brand" href="index.html">Randy Sincoular</a> <!-- Your website brand name -->
+		    </div>
+
+		    <div id="navbar" class="collapse navbar-collapse"> <!-- Links to include in navbar -->
+		      <ul class="nav navbar-nav navbar-right">  <!-- Unordered list for links on navbar -->
+                  
+                
+		         <li><a href="about.html">About</a></li>
+                 <li class="active"><a href="index.html">Portfolio</a></li> <!-- Make Portfolio Active -->
+				 <li><a href="resume.html">Resume</a></li>
+		         <li><a href="contact.html">Contact</a></li>
+                  
+		      </ul>
+		    </div> <!-- end .navbar-collapse -->
+		  </div> <!-- end .container -->
+		</nav> <!-- end navigation bar -->
+
+    
+        <!-- --------- -->
+        <!-- Jumbotron -->
+        <!-- --------- -->
+		<div class="jumbotron">
+			<div class="container">
+                <br>
+				<h2>Randy Sincoular | Geospatial Professional</h2>
+                <!-- <h5><strong>Experienced.Innovative.Thorough</strong></h5> -->
+                <p class="text-info">Experienced.Innovative.Thorough</p>
+			</div>
+		</div>
+    
+        <!-- --------------------- -->
+        <!-- Infographic Container-->
+        <!-- --------------------- -->
+    
+		<div class="container">   <!-- Using container-fluid, the paragraph and jumbotron do not line up -->
+			<div class="row">
+      
+                <!-- ----------- -->
+                <!-- Infographic -->
+                <!-- ----------- -->
+            
+                <!--   col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3 -->
+                
+				<div class="col-md-8 col-xs-10">
+                    
+                        <h4>System Architectural Diagram</h4>
+                            <p>
+                               This is an example of a software and hardware architectural diagram I created to show how ArcGIS Server and Portal for ArcGIS are deployed.  These System Architectural diagrams are very important for educating support staff because they show server names, operating systems, software versions, etc.
+                            </p>
+                   	        <a href="assets/New_Portal_PROD_Dec_2016.png">
+				                <img src="assets/New_Portal_PROD_Dec_2016.png" alt="Portfolio Item #2" class="img-responsive"/>
+				            </a> 
+                        <p>
+                            <br>
+                            Knowing what hardware and software components make up an application is very helpful when it comes time to patching servers with the latest security updates or determining what software versions are currently deployed.  This documentation becomes even more critical when you have many applications to support and dozens of servers for each application.
+                            <br>
+                        </p>
+
+  
+                    
+                                            
+
+
+   <!--                 
+                    <div class="row">
+                        <div class="col-md-8 col-md-12">
+                            <a href="assets/vmmap_2.png">
+				                <img src="assets/arcmap_memory.png" alt="Portfolio Item #2" class="img-responsive"/>
+				            </a> 
+                        </div>
+                        <p>
+                            ArcMap 9.3 is a 32 bit application.  Each session in a Citrix environment only gets a total of 2GB of address space. As memory approaches 1.4 GB, ArcMap becomes unstable and may hang up or even crash.
+                        </p>
+                    </div>
+-->
+                    
+				</div>
+                
+			</div>   <!-- end row -->
+		</div>       <!-- end container-fluid -->
+
+		<!--put your external script links here-->
+		<script type="text/javascript" src="lib/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+</body>
+    
+
+</html>

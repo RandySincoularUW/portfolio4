@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<!-- GEOG 572: Lab 4 -->
+<!-- Randy Sincoular -->
+
+
+<html lang="en" >
+
+<head>
+    
+    <!-- Provide Proper Rendering and Touch Zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>Randy Sincoular</title>
+    
+    <!-- Bootstrap Stylesheet Links -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    
+
+    
+
+</head>
+
+<body>
+        <!-- -------------- -->
+        <!-- Navigation Bar -->
+        <!-- -------------- -->
+		<nav class="navbar navbar-default navbar-fixed-top"> <!-- Creates the navbar -->
+		  <div class="container">
+		    <div class="navbar-header"> <!-- Creates the navbar header -->
+                
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <!-- Used for screen readers for accessibility -->
+						<span class="glyphicon glyphicon-menu-hamburger"></span>
+						<span class="menu"> Menu</span>
+					</button>                              <!-- Hamburger button for smaller devices -->
+					<a class="navbar-brand" href="index.html">Randy Sincoular</a> <!-- Your website brand name -->
+		    </div>
+
+		    <div id="navbar" class="collapse navbar-collapse"> <!-- Links to include in navbar -->
+		      <ul class="nav navbar-nav navbar-right">  <!-- Unordered list for links on navbar -->
+                  
+                
+		         <li><a href="about.html">About</a></li>
+                 <li class="active"><a href="portfolio.html">Portfolio</a></li> <!-- Make Portfolio Active -->
+				 <li><a href="resume.html">Resume</a></li>
+		         <li><a href="contact.html">Contact</a></li>
+                  
+		      </ul>
+		    </div> <!-- end .navbar-collapse -->
+		  </div>   <!-- end .container -->
+		</nav>     <!-- end navigation bar -->
+
+    
+        <!-- --------- -->
+        <!-- Jumbotron -->
+        <!-- --------- -->
+		<div class="jumbotron">
+			<div class="container">
+                <br>
+				<h2>Randy Sincoular | Geospatial Professional</h2>
+				<p class="text-info">Experienced.Innovative.Thorough</p>
+			</div>
+		</div>
+    
+        <!-- ------------------- -->
+        <!-- Portfolio Container-->
+        <!-- ------------------ -->
+    
+		<div class="container">
+			<div class="row">
+      
+                <!-- -------- -->
+                <!-- Column 1 -->
+                <!-- -------- -->
+            
+                <!--   col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3 -->
+                
+                <!-- orig: col-md-4 --> <!-- this seems to work for all screen sized -->
+                <!-- col-xs-6 - makes the infographic image disappear at medium and small screen sizes -->
+                
+				<div class="col-md-4 col-sm-6 col-xs-12">
+                    
+					<div class="thumbnail portfolio-thumbnail">
+                        
+						<a href="infographic.html">
+							<img src="assets/infographic_thumbnail.png" alt="Portfolio Item #2" />
+						</a>
+					</div>
+                    <div class="caption">
+                           <h4>Infographic</h4>
+                            <p>
+                                Longform Infographic that uses bivariate data to tell a story about the taxes we pay and the services we get in return. Excel, ArcMap, Indiemapper and Adobe Illustrator were used to produce this Infographic.
+                            </p>
+                    </div>
+				</div>
+                
+
+
+                <!-- -------- -->
+                <!-- Column 2 -->
+                <!-- -------- -->                                    
+                
+                <div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail portfolio-thumbnail">
+						<a href="bike_map.html">
+                            
+							<img class="img-responsive" src="assets/bike_map_zoom_2.png" alt="Portfolio Item #1" />
+						
+			            </a>        <!-- Move this and the /div below the caption for a border -->
+                               
+                    </div>		    <!-- Move this and the /div below the caption for a border -->
+                    
+                        <div class="caption">
+                           <h4>Terrain Map with Bike Route</h4>
+                                                        
+                             <p>
+                            Here is a terrain map with land cover data to enhance the realism and appeal of the shaded relief map. The bike route was created in Google My Maps.  ArcMap, Adobe Photoshop and Adobe Illustrator were used to produce this map.
+                            </p>                           
+
+                        
+                        </div>
+				</div> 
+                
+                <!-- ------------ -->
+                <!-- Column Reset -->
+                <!-- ------------ -->
+              
+                <div class="clearfix visible-sm"> </div>
+                
+                
+                <!-- -------- -->
+                <!-- Column 3 -->
+                <!-- -------- -->
+				<div class="col-md-4  col-sm-6 col-xs-12">
+					<div class="thumbnail portfolio-thumbnail">
+						<a href="mariners_map.html">
+                            
+                            <!-- <img src="assets/mariners_map.png" alt="Portfolio Item #3" /> -->
+							<img class="img-responsive" src="assets/mariners_map5.png" alt="Portfolio Item #3" />
+						</a>
+					</div>
+                        <div class="caption">
+                           <h4>Antique Mariners Map</h4>                                                      
+                            <p>
+                               CartoCSS and Mapbox Studio Classic were used to replicate the aesthetic style of an antique mariners map from the 1700’s and create a Slippy Map.  
+                            </p>
+                        </div>
+				</div>  <!-- end div/class -->
+                
+                
+                <!-- ------------ -->
+                <!-- Column Reset -->
+                <!-- ------------ -->
+                
+                <div class="clearfix visible-md"> </div>
+                <div class="clearfix visible-lg"> </div> 
+
+
+                
+                <!-- -------- -->
+                <!-- Column 4 -->
+                <!-- -------- -->
+				<div class="col-md-4  col-sm-6 col-xs-12">
+					<div class="thumbnail portfolio-thumbnail">
+						<a href="diagram.html">
+                            
+                            <!-- <img src="assets/mariners_map.png" alt="Portfolio Item #3" /> -->
+							<img class="img-responsive" src="assets/diagram_zoom_2.png" alt="Portfolio Item" />
+						</a>
+					</div>
+                        <div class="caption">
+                           <h4>System Architectural Diagram</h4>                                             
+                            <p>
+                                This is an example of a software and hardware architectural diagram I created to show how ArcGIS Server and Portal for ArcGIS are deployed.  
+                            </p>
+                        </div>
+				</div>  <!-- end div/class -->
+                 
+                <!-- ------------ -->
+                <!-- Column Reset -->
+                <!-- ------------ -->
+                
+                <div class="clearfix visible-sm"> </div>
+
+                <!-- -------- -->
+                <!-- Column 5 -->
+                <!-- -------- -->
+				<div class="col-md-4  col-sm-6 col-xs-12">
+					<div class="thumbnail portfolio-thumbnail">
+						<a href="vmmap.html">
+                            
+                            <!-- <img src="assets/mariners_map.png" alt="Portfolio Item #3" /> -->
+							<img class="img-responsive" src="assets/arcmap_hungup.png" alt="Portfolio Item" />
+						</a>
+					</div>
+                        <div class="caption">
+                           <h4>Troubleshooting</h4>                                             
+                            <p>
+                                Here is an example of using a Microsoft tool called VMMap to troubleshoot why ArcMap 9.3 was crashing or hanging up.
+                            </p>
+                        </div>
+				</div>  <!-- end div/class -->
+
+                
+                <!-- -------- -->
+                <!-- Column 6 -->
+                <!-- -------- -->
+				<div class="col-md-4  col-sm-6 col-xs-12">
+					<div class="thumbnail portfolio-thumbnail">
+						<a href="map_services.html">
+                            
+                            <!-- <img src="assets/outage_map.png" alt="Portfolio Item #3" /> -->
+							<img class="img-responsive" src="assets/outage_map_zoom.png" alt="Portfolio Item" />
+						</a>
+					</div>
+                        <div class="caption">
+                           <h4>Portal Apps and Map Services</h4>                                             
+                            <p>
+                               Here is a screenshot of an operations dashboard showing electric outages.
+                            </p>
+                        </div>
+				</div>  <!-- end div/class -->
+
+                
+                
+		</div>    <!-- end div/class=row -->
+                    
+    </div>        <!-- end container -->
+
+		<!--put your external script links here-->
+		<script type="text/javascript" src="lib/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+</body>
+    
+
+</html>

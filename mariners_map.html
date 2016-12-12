@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!-- GEOG 572: Lab 4 -->
+<!-- Randy Sincoular -->
+
+
+<html lang="en" >
+
+<head>
+    
+    <!-- Provide Proper Rendering and Touch Zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>Randy Sincoular</title>
+    
+    <!-- Bootstrap Stylesheet Links -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    
+
+</head>
+
+<body>
+        <!-- -------------- -->
+        <!-- Navigation Bar -->
+        <!-- -------------- -->
+		<nav class="navbar navbar-default navbar-fixed-top"> <!-- Creates the navbar -->
+		  <div class="container">
+		    <div class="navbar-header"> <!-- Creates the navbar header -->
+                
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <!-- Used for screen readers for accessibility -->
+						<span class="glyphicon glyphicon-menu-hamburger"></span>
+						<span class="menu"> Menu</span>
+					</button> <!-- Hamburger button for smaller devices -->
+					<a class="navbar-brand" href="index.html">Randy Sincoular</a> <!-- Your website brand name -->
+		    </div>
+
+		    <div id="navbar" class="collapse navbar-collapse"> <!-- Links to include in navbar -->
+		      <ul class="nav navbar-nav navbar-right">  <!-- Unordered list for links on navbar -->
+                  
+                
+		         <li><a href="about.html">About</a></li>
+                 <li class="active"><a href="index.html">Portfolio</a></li> <!-- Make Portfolio Active -->
+				 <li><a href="resume.html">Resume</a></li>
+		         <li><a href="contact.html">Contact</a></li>
+                  
+		      </ul>
+		    </div> <!-- end .navbar-collapse -->
+		  </div> <!-- end .container -->
+		</nav> <!-- end navigation bar -->
+
+    
+        <!-- --------- -->
+        <!-- Jumbotron -->
+        <!-- --------- -->
+		<div class="jumbotron">
+			<div class="container">
+                 <br>
+				<h2>Randy Sincoular | Geospatial Professional</h2>
+				<p class="text-info">Experienced.Innovative.Thorough</p>
+			</div>
+		</div>
+    
+        <!-- --------------------- -->
+        <!-- Infographic Container-->
+        <!-- --------------------- -->
+    
+		<div class="container">
+			<div class="row">
+      
+                <!-- ----------- -->
+                <!-- Infographic -->
+                <!-- ----------- -->
+            
+                
+				<div class="col-md-8 col-xs-10">
+                    
+                        <h4>Antique Mariners Map</h4>
+                            <p>
+                                CartoCSS and Mapbox Studio Classic were used to replicate the aesthetic style of an antique mariners map from the 1700’s and create an interactive Slippy Map. Multi-scale design was necessary to provide consistent style across all zoom levels and make use of multiple map layers.  Bathymetry layers and graticules were added to enhance the map.
+
+                            </p>
+                            <p>
+                    
+                            <h5>Left Click on the Map to Display the Interactive Slippy Map</h4>
+                            </p>
+                   			
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="https://api.mapbox.com/v4/randysincoularuw.a9098891/page.html?access_token=pk.eyJ1IjoicmFuZHlzaW5jb3VsYXJ1dyIsImEiOiJjaXNmOHFmMncwMWQ2Mm52b3o4eXkwZGlpIn0.TiV9aX7MCkW9TtSIorCo3A#3/23.97/-45.53">
+				                <img src="assets/mariners_map5.png" alt="Portfolio Item #2" class="img-responsive"/>
+				            </a> 
+                        </div>
+                        
+                    </div>
+
+				</div>
+                
+			</div>   <!-- end row -->
+		</div>       <!-- end container-fluid -->
+
+		<!--put your external script links here-->
+		<script type="text/javascript" src="lib/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+</body>
+    
+
+</html>

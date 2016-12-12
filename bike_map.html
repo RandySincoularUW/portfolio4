@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<!-- GEOG 572: Lab 4 -->
+<!-- Randy Sincoular -->
+
+
+<html lang="en" >
+
+<head>
+    
+    <!-- Provide Proper Rendering and Touch Zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>Randy Sincoular</title>
+    
+    <!-- Bootstrap Stylesheet Links -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    
+
+</head>
+
+<body>
+        <!-- -------------- -->
+        <!-- Navigation Bar -->
+        <!-- -------------- -->
+		<nav class="navbar navbar-default navbar-fixed-top"> <!-- Creates the navbar -->
+		  <div class="container">
+		    <div class="navbar-header"> <!-- Creates the navbar header -->
+                
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <!-- Used for screen readers for accessibility -->
+						<span class="glyphicon glyphicon-menu-hamburger"></span>
+						<span class="menu"> Menu</span>
+					</button> <!-- Hamburger button for smaller devices -->
+					<a class="navbar-brand" href="index.html">Randy Sincoular</a> <!-- Your website brand name -->
+		    </div>
+
+		    <div id="navbar" class="collapse navbar-collapse"> <!-- Links to include in navbar -->
+		      <ul class="nav navbar-nav navbar-right">  <!-- Unordered list for links on navbar -->
+                  
+                
+		         <li><a href="about.html">About</a></li>
+                 <li class="active"><a href="index.html">Portfolio</a></li> <!-- Make Portfolio Active -->
+				 <li><a href="resume.html">Resume</a></li>
+		         <li><a href="contact.html">Contact</a></li>
+                  
+		      </ul>
+		    </div> <!-- end .navbar-collapse -->
+		  </div> <!-- end .container -->
+		</nav> <!-- end navigation bar -->
+
+    
+        <!-- --------- -->
+        <!-- Jumbotron -->
+        <!-- --------- -->
+		<div class="jumbotron">
+			<div class="container">
+				<h2>Randy Sincoular | Geospatial Professional</h2>
+				<p>Experienced.Innovative.Thorough</p>
+			</div>
+		</div>
+    
+        <!-- --------------------- -->
+        <!-- Infographic Container-->
+        <!-- --------------------- -->
+    
+        <!-- div class="container-fluid">  --> <!-- the paragraph does not line up with the jumbotron -->
+		<div class="container">          <!-- container - lines the paragraph up with left border of the jumbotron -->
+			<div class="row">
+      
+                <!-- ----------- -->
+                <!-- Infographic -->
+                <!-- ----------- -->
+            
+                <!--   col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3 -->
+                
+				<div class="col-md-8 col-xs-10">
+                    
+                        <h4>Hillshade Map with Land Cover and Bike Route</h4>
+                            <p>
+                                Here is a terrain map using a digital elevation model and land cover data to enhance the realism and appeal of the shaded relief map.  Natural Earth vector data sets were used for physical and cultural features.  The Bike route was created in Google My Maps and exported as a KML file into ArcMap. The detailed hillshade was generated in ArcMap using the 3D Analyst extension.  The landcover was generalized using ArcMap and the Spatial Analyst extension. Photoshop was used to merge, process and style the hillshade, DEM and land cover layers.  Adobe Illustrator was used with the raster data from Photoshop and vector layers to produce the final map.
+                            </p>
+                   			
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="assets/infographic.png">
+				                <img src="assets/bike_map.png" alt="Portfolio Item #2" class="center-block img-responsive"/>
+				            </a> 
+                        </div>
+                        
+                    </div>
+
+				</div>
+                
+			</div>   <!-- end row -->
+		</div>       <!-- end container-fluid -->
+
+		<!--put your external script links here-->
+		<script type="text/javascript" src="lib/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+</body>
+    
+
+</html>
